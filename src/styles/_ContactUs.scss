@@ -1,0 +1,50 @@
+.ContactUs {
+    margin-top: 200px;
+    &__row {
+        display: flex;
+        column-gap: 100px;
+    }
+
+    &__col {
+       
+        .column {
+            display: flex;
+            column-gap: 10px;
+        }
+    }
+
+
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 30px;
+
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(143, 149, 165, 1);
+        margin-bottom: 60px;
+
+    }
+
+    &__int {
+        width: 400px;
+        padding-left:  30px;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+    &__btn {
+        width: 180px;
+        height: 60px;
+        background: rgba(38, 50, 56, 1);
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #fff;
+
+    }
+}

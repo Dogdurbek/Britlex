@@ -1,0 +1,42 @@
+.AboutUs {
+    margin-top: 180px;
+    &__row {
+        display: flex;
+        img {
+            height: 500px;
+        }
+    }
+    &__col {
+        width: 50%;
+        margin-right: 130px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 111%;
+        margin-bottom: 23px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(143, 149, 165, 1);
+        margin-bottom: 30px;
+        
+    }
+    &__left {
+        display: flex;
+        justify-content: space-between;
+
+    } 
+    &__price {
+        font-weight: 600;
+        font-size: 48px;
+        text-align: center;
+        color: rgba(42, 50, 70, 1);
+        
+    }
+    &__text {
+        font-size: 20px;
+    }
+}

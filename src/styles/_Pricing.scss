@@ -1,0 +1,92 @@
+.Pricing {
+    &__1title {
+        font-weight: 600;
+        font-size: 45px;
+        color: rgba(0, 0, 0, 1);
+        margin: 180px 0 60px 0;
+        text-align: center;
+
+    }
+    &__row {
+        display: flex;
+        //justify-content: space-between;
+        column-gap: 30px;
+
+    }
+
+    &__col {
+        width: 33%;
+    }
+
+    &__img {
+        height: 283px;
+        width: 100%;
+
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        color: rgba(38, 50, 56, 1);
+
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        color: rgba(143, 149, 165, 1);
+
+    }
+    &__btn1 {
+        display: flex;
+        justify-content: space-around;
+        font-weight: 400;
+        color: rgba(38, 50, 56, 1);
+        font-size: 30px;
+        border-radius: 5px;
+        border: none;
+        background: rgba(238, 238, 238, 1);
+        width: 240px;
+        height: 45px;
+        padding: 5px;
+        margin-top: 30px;
+
+        
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            color: rgba(84, 98, 105, 1);
+            display: flex;
+            margin-top: 7px;
+
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+        font-weight: 400;
+        color: rgba(38, 50, 56, 1);
+        font-size: 30px;
+        border-radius: 5px;
+        border: none;
+        background: rgba(238, 238, 238, 1);
+        width: 240px;
+        height: 45px;
+        padding: 5px;
+        margin-top: 54px;
+
+        
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            color: rgba(84, 98, 105, 1);
+            display: flex;
+            margin-top: 7px;
+
+        }
+
+    }
+}
