@@ -4,26 +4,17 @@
     background-color: #fff;
     padding: 25px 0;
     z-index: 10;
-
-    
-
-    .container {
-        max-width: 1250px;
-        width: 100%;
-        margin: auto;
-
-
-    }
+ 
     .navbar {
         display: flex;
         
         &__logo {
-            margin-right: 200px;
+            margin-right: 15%;
            
 
             img {
                 align-items: center;
-                width: 106px;
+                width: 250%;
                 height: 54px;
             }
         }

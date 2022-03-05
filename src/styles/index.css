@@ -35,12 +35,6 @@ li, a {
   z-index: 10;
 }
 
-.header .container {
-  max-width: 1250px;
-  width: 100%;
-  margin: auto;
-}
-
 .header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,14 +42,14 @@ li, a {
 }
 
 .header .navbar__logo {
-  margin-right: 200px;
+  margin-right: 15%;
 }
 
 .header .navbar__logo img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 106px;
+  width: 250%;
   height: 54px;
 }
 
@@ -100,11 +94,16 @@ li, a {
   width: 50%;
 }
 
+.Britlex__img {
+  width: 100%;
+}
+
 .Britlex__title {
   font-weight: 600;
   font-size: 64px;
   position: relative;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .Britlex__title img {
@@ -121,13 +120,12 @@ li, a {
 }
 
 .Britlex__btn {
-  width: 438px;
+  width: 50%;
   height: 118px;
   font-size: 36px;
   color: #ffffff;
   background-color: #263238;
   border-radius: 15px;
-  line-height: 100%;
   border: none;
 }
 
@@ -510,5 +508,28 @@ li, a {
 .footer__link {
   font-size: 18px;
   color: #8f95a5;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+  .header .navbar__logo img {
+    width: 150%;
+    height: 44px;
+  }
+  .Britlex__title {
+    font-size: 54px;
+  }
+  .Britlex__btn {
+    font-size: 26px;
+    height: 108px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
