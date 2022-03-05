@@ -4,6 +4,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,7 +12,8 @@ body {
   background-color: #fff;
 }
 
-li, a {
+li,
+a {
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
@@ -23,8 +25,6 @@ li, a {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .header {
@@ -39,27 +39,26 @@ li, a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header .navbar__logo {
-  margin-right: 15%;
-}
-
-.header .navbar__logo img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 250%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar__logo {
   height: 54px;
+}
+
+.header .navbar__logo img {
+  height: 100%;
 }
 
 .header .navbar__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -67,11 +66,7 @@ li, a {
           column-gap: 30px;
 }
 
-.header .navbar__btn {
-  margin-left: 240px;
-}
-
-.header .navbar__btn button {
+.header .navbar button {
   background-color: #fff;
   width: 215px;
   height: 65px;
@@ -88,6 +83,12 @@ li, a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .Britlex .row .col {
@@ -95,13 +96,21 @@ li, a {
 }
 
 .Britlex__img {
+  width: 40%;
+  display: block;
+}
+
+.Britlex__img img {
   width: 100%;
 }
 
 .Britlex__title {
+  position: relative;
+}
+
+.Britlex__title h1 {
   font-weight: 600;
   font-size: 64px;
-  position: relative;
   margin-bottom: 40px;
   width: 100%;
 }
@@ -129,9 +138,13 @@ li, a {
   border: none;
 }
 
+.Skills {
+  padding: 90px 0 0;
+}
+
 .Skills__skill {
   text-align: center;
-  margin: 90px;
+  margin: 0 0 90px;
 }
 
 .Skills__skill h2 {
@@ -205,6 +218,17 @@ li, a {
   color: #8f95a5;
   font-size: 16px;
   font-weight: 400;
+  height: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+}
+
+sroll
+.Skills .row .squares__descr:focus {
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 220px;
 }
 
 .Skills .row .squares__btn {
@@ -512,24 +536,107 @@ li, a {
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 970px;
+    max-width: 992px;
   }
-  .header .navbar__logo img {
-    width: 150%;
-    height: 44px;
+  .header .navbar__logo {
+    height: 40px;
   }
-  .Britlex__title {
-    font-size: 54px;
+  .header .navbar__nav {
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+  }
+  .header .navbar__nav .nav-item {
+    font-size: 18px;
+  }
+  .header .navbar button {
+    width: 180px;
+    height: 40px;
+    font-size: 22px;
+  }
+  .Britlex {
+    padding: 110px 0 0;
+  }
+  .Britlex__title h1 {
+    font-size: 50px;
+    line-height: 120%;
+    margin: 0 0 30px;
+  }
+  .Britlex__title img {
+    left: 95%;
+    width: 90px;
+  }
+  .Britlex__descr {
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0 0 40px;
   }
   .Britlex__btn {
-    font-size: 26px;
-    height: 108px;
+    height: 70px;
+    font-size: 28px;
+  }
+  .Skills__skill {
+    margin: 0 0 70px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 750px;
+    max-width: 768px;
+  }
+  .header .container {
+    max-width: none;
+    padding: 0 30px;
+  }
+  .Britlex__title h1 {
+    font-size: 46px;
+  }
+  .Britlex__title h1 br {
+    display: none;
+  }
+  .Britlex__title img {
+    width: 80px;
+    right: 0;
+    left: auto;
+  }
+  .Britlex__descr {
+    font-size: 19px;
+    margin: 0 0 30px;
+  }
+  .Britlex__btn {
+    font-size: 26px;
+  }
+  .Britlex__img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+  .Britlex .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Britlex .row .col {
+    width: 100%;
+  }
+  .Britlex__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 10px;
   }
 }
 /*# sourceMappingURL=index.css.map */

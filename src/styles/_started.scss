@@ -3,24 +3,34 @@
 
     .row {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         .col {
             width: 50%;
-
         }
     }
 
     &__img {
-        width: 100%;
+        width: 40%;
+        display: block;
+
+        img {
+            width: 100%;
+        }
     }
 
 
     &__title {
-        font-weight: 600;
-        font-size: 64px;
         position: relative;
-        margin-bottom: 40px;
-        width: 100%;
+
+        h1 {
+            font-weight: 600;
+            font-size: 64px;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
         img {
             position: absolute;
             top: 40%;
@@ -44,6 +54,6 @@
         border-radius: 15px;
         //line-height: 100%;
         border: none;
-        
+
     }
 }

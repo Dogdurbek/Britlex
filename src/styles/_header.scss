@@ -4,41 +4,33 @@
     background-color: #fff;
     padding: 25px 0;
     z-index: 10;
- 
+
     .navbar {
         display: flex;
-        
-        &__logo {
-            margin-right: 15%;
-           
+        align-items: center;
+        justify-content: space-between;
 
+        &__logo {
+            height: 54px;
             img {
-                align-items: center;
-                width: 250%;
-                height: 54px;
+                height: 100%;
             }
         }
 
-        &__nav{
+        &__nav {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             column-gap: 30px;
-            
         }
-        
-        &__btn {
-            margin-left: 240px;
 
-            button {
-                background-color: #fff;
-                width: 215px;
-                height: 65px;
-                font-weight: 400;
-                font-size: 24px;
-                border-radius: 5px;
-            }
+        button {
+            background-color: #fff;
+            width: 215px;
+            height: 65px;
+            font-weight: 400;
+            font-size: 24px;
+            border-radius: 5px;
         }
-            
+
     }
 }

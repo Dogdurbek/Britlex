@@ -1,29 +1,35 @@
 .Skills {
+    padding: 90px 0 0;
+
     &__skill {
         text-align: center;
-        margin: 90px;
-       
+        margin: 0 0 90px;
+
         h2 {
             font-weight: 600;
             font-size: 48px;
             line-height: 111%;
-            
+
         }
     }
 
     .row {
         display: flex;
+
         .col {
             width: 33%;
             padding: 80px 43px;
             border-radius: 10px;
             background: rgba(245, 245, 245, 1);
         }
+
         .squares {
             width: 66%;
+
             &__top {
                 display: flex;
             }
+
             .listening {
                 display: flex;
                 border-radius: 10px;
@@ -40,75 +46,85 @@
                 background: rgba(245, 245, 245, 1);
                 margin-left: 18px;
             }
+
             .col2 {
                 width: 50%;
                 padding: 0 30px 44px 40px;
                 border-radius: 10px;
                 background: rgba(245, 245, 245, 1);
                 margin-left: 18px;
-            }  
+            }
 
-           &__img {
-            width: 100%;
-            height: 247px;
-           }
+            &__img {
+                width: 100%;
+                height: 247px;
+            }
 
-           &__title {
-               font-weight: 600;
-               font-size: 30px;
-               line-height: 178%;
-               color: rgba(38, 50, 56, 1);
-           }
+            &__title {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 178%;
+                color: rgba(38, 50, 56, 1);
+            }
 
-           &__descr {
-               color: rgba(143, 149, 165, 1);
-               font-size: 16px;
-               font-weight: 400;
-           }
+            &__descr {
+                color: rgba(143, 149, 165, 1);
+                font-size: 16px;
+                font-weight: 400;
+                height: 100px;
+                transition: 1s;
+                overflow: hidden;
+                scroll-behavior: ;
+                &:focus {
+                    transition: 1s;
+                    height: 220px;
+                }
+            }
 
-           &__btn {
-            width: 218px;
-            height: 60px;
-            color: #fff;
-            background-color: rgba(38, 50, 56, 1);
-            font-weight: 500;
-            font-size: 20px;
-            border-radius: 5px;
-            border: none;
-            margin-top: 38px;
-           }
-           &__img2 {
-               width: 100%;
-               height: 247px;
-           }
+            &__btn {
+                width: 218px;
+                height: 60px;
+                color: #fff;
+                background-color: rgba(38, 50, 56, 1);
+                font-weight: 500;
+                font-size: 20px;
+                border-radius: 5px;
+                border: none;
+                margin-top: 38px;
+            }
 
-           &__title2 {
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 178%;
-            color: rgba(38, 50, 56, 1);
-           }
+            &__img2 {
+                width: 100%;
+                height: 247px;
+            }
 
-           &__descr2 {
-               font-weight: 400;
-               font-size: 16px;
-               color: rgba(143, 149, 165, 1);
+            &__title2 {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 178%;
+                color: rgba(38, 50, 56, 1);
+            }
 
-           }
+            &__descr2 {
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(143, 149, 165, 1);
 
-           &__btn2 {
-            width: 218px;
-            height: 60px;
-            color: #fff;
-            background-color: rgba(38, 50, 56, 1);
-            font-weight: 500;
-            font-size: 20px;
-            border-radius: 5px;
-            border: none;
-            margin-top: 38px;
-           }
+            }
 
-           
+            &__btn2 {
+                width: 218px;
+                height: 60px;
+                color: #fff;
+                background-color: rgba(38, 50, 56, 1);
+                font-weight: 500;
+                font-size: 20px;
+                border-radius: 5px;
+                border: none;
+                margin-top: 38px;
+            }
+
+
         }
     }
 
@@ -124,6 +140,7 @@
         color: rgba(38, 50, 56, 1);
 
     }
+
     &__descr {
         font-size: 16px;
         font-weight: 400;
@@ -141,6 +158,6 @@
         line-height: 100%;
         border-radius: 5px;
         border: none;
-        
+
     }
 }

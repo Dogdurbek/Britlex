@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,7 +12,8 @@ body {
     background-color: #fff;
 }
 
-li, a {
+li,
+a {
     text-decoration: none;
     // line-height: 100%;
     font-weight: 500;
@@ -20,13 +22,13 @@ li, a {
     color: rgba(38, 50, 56, 1);
     ;
 }
+
 .container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
 }
+
 @import './header';
 @import './started';
 @import './skills';

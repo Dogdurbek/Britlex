@@ -16,12 +16,12 @@
                 <div class="navbar__logo"><img src="./src/image/header/Britlex.svg" alt="BritLex logo"></div>
                 <ul class="navbar__nav">
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">AboutUs</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
                 </ul>
-                <div class="navbar__btn"><button>Let's Talk</button></div>
+                <button>Let's Talk</button>
             </nav>
         </div>
     </header>
@@ -30,22 +30,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1 class="Britlex__title">Learn <br>
-                            Any Foreign
-                            Language
+                        <div class="Britlex__title">
+                            <h1>Learn <br>
+                                Any Foreign
+                                Language
+                            </h1>
                             <img class="Britlex__bulb" src="./src/image/started/bulb.svg" alt="bulb">
-                        </h1>
+                        </div>
                         <p class="Britlex__descr">With our teachers who write a program for
                             each student, you will be able to make your
                             first sketch after the first lesson.</p>
 
                         <button class="Britlex__btn">Get started</button>
                     </div>
-                    <div class="col"><img class="Britlex__img" src="./src/image/started/Learninglanguages.png" alt="ll"></div>
+                    <div class="Britlex__img">
+                        <img src="./src/image/started/Learninglanguages.png" alt="ll">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="Skills">
+        <section id="Skills" class="Skills">
             <div class="container">
                 <div class="Skills__skill">
                     <h2>Skills</h2>
@@ -68,9 +72,11 @@
                             <div class="col1">
                                 <img src="./src/image/skills/Type.png" alt="write" class="squares__img">
                                 <p class="squares__title">Writing</p>
-                                <p class="squares__descr">One of the most important and extensive
+                                <p tabindex="1" class="squares__descr">One of the most important and extensive
                                     areas of natural science, the science that
-                                    studies substances, also their composition </p>
+                                    studies substances, also their composition One of the most important and extensive
+                                    areas of natural science, the science that
+                                    studies substances, also their composition</p>
                                 <button class="squares__btn">learn more</button>
                             </div>
                             <div class="col2">
@@ -166,7 +172,8 @@
                     </div>
                     <div class="ContactUs__col">
                         <p class="ContactUs__title">Contact Us</p>
-                        <p class="ContactUs__text">Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
+                        <p class="ContactUs__text">Discover your current English level by taking our free online English
+                            test.Sign up to our newsletter for learning tips and free resources</p>
                         <div class="column">
                             <input type="email" class="ContactUs__int" placeholder="Enter Your E-mail">
                             <button class="ContactUs__btn">Subscribe</button>
@@ -177,14 +184,14 @@
         </section>
     </main>
     <footer class="footer">
-       
+
         <div class="container">
             <div class="footer__line"></div>
             <div class="footer__row">
                 <img src="./src/image/header/Britlex.svg" alt="Britlexlogo" class="footer__logo">
                 <p class="footer__link">Terms and Conditions • Privacy Policy • Cookie Policy</p>
             </div>
-           
+
         </div>
     </footer>
 </body>
