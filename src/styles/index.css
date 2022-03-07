@@ -218,13 +218,12 @@ a {
   color: #8f95a5;
   font-size: 16px;
   font-weight: 400;
-  height: 100px;
+  height: 125px;
   -webkit-transition: 1s;
   transition: 1s;
   overflow: hidden;
 }
 
-sroll
 .Skills .row .squares__descr:focus {
   -webkit-transition: 1s;
   transition: 1s;
@@ -259,6 +258,16 @@ sroll
   font-weight: 400;
   font-size: 16px;
   color: #8f95a5;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 120px;
+}
+
+.Skills .row .squares__descr2:focus {
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 220px;
 }
 
 .Skills .row .squares__btn2 {
@@ -290,6 +299,16 @@ sroll
   font-weight: 400;
   color: #8f95a5;
   margin-bottom: 38px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 250px;
+  overflow: hidden;
+}
+
+.Skills__descr:focus {
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 320px;
 }
 
 .Skills__btn {

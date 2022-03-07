@@ -71,10 +71,9 @@
                 color: rgba(143, 149, 165, 1);
                 font-size: 16px;
                 font-weight: 400;
-                height: 100px;
+                height: 125px;
                 transition: 1s;
                 overflow: hidden;
-                scroll-behavior: ;
                 &:focus {
                     transition: 1s;
                     height: 220px;
@@ -109,6 +108,13 @@
                 font-weight: 400;
                 font-size: 16px;
                 color: rgba(143, 149, 165, 1);
+                overflow: hidden;
+                transition: 1s;
+                height: 120px;
+                &:focus {
+                    transition: 1s;
+                    height: 220px;
+                }
 
             }
 
@@ -146,6 +152,14 @@
         font-weight: 400;
         color: rgba(143, 149, 165, 1);
         margin-bottom: 38px;
+        transition: 1s;
+        height: 250px;
+        overflow: hidden;
+        &:focus {
+            transition: 1s;
+            height: 320px;
+        }
+
     }
 
     &__btn {
