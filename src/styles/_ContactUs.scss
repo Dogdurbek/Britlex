@@ -2,14 +2,17 @@
     margin-top: 200px;
     &__row {
         display: flex;
-        column-gap: 100px;
+        // column-gap: 100px;
     }
 
     &__col {
        
         .column {
             display: flex;
-            column-gap: 10px;
+            // column-gap: 10px;
+        }
+        img {
+            width: 100%;
         }
     }
 
